@@ -1,0 +1,229 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins';
+ }
+
+ body {
+   font-family: 'Poppins', sans-serif;
+   background-color: bisque;
+ }
+
+ .cointainer {
+   width: 100%;
+   height: auto;
+
+ }
+
+ .cointainer h1 {
+   text-align: center;
+   margin: 35px auto;
+   font-family: 'Poppins';
+   color: orangered;
+ }
+
+ .cointainer form {
+   height: 500px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   background-color: orangered;
+   margin: auto;
+   background: linear-gradient(to bottom, orangered, yellow);
+   border: solid orangered;
+ }
+
+ .label {
+   background-color: red;
+   padding: 11px 50px;
+   font-size: 1em;
+   border-radius: 10px 0px 0px 10px;
+   color: aliceblue;
+ }
+
+ .label-b {
+   background-color: red;
+   padding: 11px 25px;
+   font-size: 1em;
+   border-radius: 10px 0px 0px 10px;
+   color: aliceblue;
+ }
+
+ input[type='text'] {
+   width: 500px;
+   padding: 10px 20px;
+   font-size: 1em;
+   border-radius: 0 10px 10px 0px;
+   border-style: none;
+ }
+
+ select {
+   width: 500px;
+   border-style: none;
+   padding: 10px 20px;
+   font-size: 1em;
+   border-radius: 0 10px 10px 0px;
+ }
+
+ select.select {
+   border-style: none;
+   width: 500px;
+   padding: 10px 20px;
+   font-size: 1em;
+   border-radius: 0 10px 10px 0px;
+   background: #fff;
+ }
+
+ .colum {
+   display: block;
+   margin: 45px auto;
+ }
+
+ .form-field {
+   display: block;
+   margin: auto;
+ }
+
+ input[type='submit'] {
+   padding: 10px 20px;
+   display: block;
+   margin: auto;
+   border-style: none;
+   background-color: red;
+   color: #fff;
+   border-radius: 5px;
+   cursor: pointer;
+   border-style: solid;
+   border-color: red;
+   border-width: 2px;
+   transition: all ease-in-out 0.2s;
+   font-weight: 600;
+ }
+
+ input[type='submit']:hover {
+   color: red;
+   background-color: white;
+   font-weight: 600;
+   font-size: 1em;
+
+ }
+ .sub-btn{
+  padding: 10px 20px;
+  display: block;
+  margin: auto;
+  border-style: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
+  transition: all ease-in-out 0.2s;
+  font-weight: 600;
+  &:hover{
+    color: red;
+   background-color: white;
+   font-weight: 600;
+   font-size: 1em;
+  }
+ }
+ .result {
+   width: 100%;
+   margin: 60px 0;
+ }
+
+ .result h1 {
+   text-align: center;
+   margin: 50px 0px;
+   color: orangered;
+
+ }
+
+ .clg-return-list {
+   width: 80%;
+   margin: 0 auto;
+ }
+
+ .clg-return-list li {
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+   color: red;
+   font-weight: 600;
+   font-size: 1.3em;
+
+ }
+
+ .clg-return-list li.list {
+   border-style: solid;
+   border-color: red;
+   border-width: 2px;
+   padding: 20px;
+   margin: 30px;
+   border-radius: 10px;
+   color: black;
+   font-weight: 600;
+   background-color: #fff;
+   p.clg-list{
+   width: 30%;
+   background: #000;
+   }
+   
+ }
+ .error-msg{
+  color:red;
+  font-size: small;
+  margin-left: 160px;
+  margin-bottom: -30px;
+  margin-top: 10px;
+ }
+
+ @media(max-width:830px){
+  .cointainer{
+    width: 100%;
+  }
+  .cointainer form{
+    width: 80%;
+  }
+  input[type='text']
+  {
+    width: 70%;
+  }
+  select {
+    width: 63%;
+  }
+  select.select{
+    width: 70%;
+  }
+  .label{
+    padding: 13px 15px;
+    font-size: small;
+  }
+  .label-b{
+    padding: 13px 10px;
+    font-size: small;
+  }
+  .result h1{
+    font-size: large;
+    width: 100%;
+  }
+  .cointainer h1{
+    font-size: large;
+  }
+  .clg-return-list p{
+    font-size: medium;
+  }
+ }
+
+ .error-msg{
+  margin-left: 100px;
+ }
+ @media(max-width:375px){
+  .cointainer form{
+    width: 100%;
+    
+  }
+   }

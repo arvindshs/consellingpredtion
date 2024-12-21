@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="cointainer" id="home">
+          <h1>TNEA COUNSELING PREDICTION</h1>
+          <form>
+            <div class="form-field">
+              <div class="colum">
+                <label class="label">Cutoff</label>
+                <input type="text" placeholder="Enter your Cutoff" id="cutoff" required  />
+                <p class="error-msg" id="cutoff-error"></p>
+              </div>
+      
+              <div class="colum">
+                <label class="label-b">Community</label>
+                <select id="community"  required>
+                  <option value="" disabled selected hidden>Select an option...</option>
+                  <option value="OC">OC</option>
+                  <option value="BC">BC</option>
+                  <option value="BCM">BCM</option>
+                  <option value="MBC">MBC</option>
+                  <option value="MBCDNC">MBCDNC</option>
+                  <option value="SC">SC</option>
+                  <option value="SCA">SCA</option>
+                  <option value="ST">ST</option>
+                </select>
+                <p class="error-msg" id="community-error"></p>
+              </div>
+      
+              <div class="colum">
+                <label class="label">Course</label>
+                <select class="select" id="course" required>
+                  <option value="" disabled selected hidden>Select an option...</option>
+                  <option value="civil engineering">Civil Engineering</option>
+                  <option value="mechanical engineering">Mechanical Engineering</option>
+                  <option value="electrical and electronics engineering">Electrical and Electronics Engineering</option>
+                  <option value="electronics and communication engineering">Electronics and Communication Engineering</option>
+                  <option value="computer science and engineering">Computer Science and Engineering</option>
+                  <option value="information technology">Information Technology</option>
+                  <option value="biomedical engineering">Biomedical Engineering</option>
+                  <option value="agricultural engineering">Agricultural Engineering</option>
+                  <option value="aeronautical engineering">Aeronautical Engineering</option>
+                  <option value="automobile engineering">Automobile Engineering</option>
+                  <option value="chemical engineering">Chemical Engineering</option>
+                  <option value="industrial engineering">Industrial Engineering</option>
+                  <option value="mining engineering">Mining Engineering</option>
+                  <option value="petroleum engineering">Petroleum Engineering</option>
+                  <option value="robotics and automation">Robotics and Automation</option>
+                  <option value="mechatronics engineering">Mechatronics Engineering</option>
+                  <option value="environmental engineering">Environmental Engineering</option>
+                  <option value="biotechnology">Biotechnology</option>
+                  <option value="food technology">Food Technology</option>
+                  <option value="textile technology">Textile Technology</option>
+                  <option value="production engineering">Production Engineering</option>
+                  <option value="artificial intelligence and data science">Artificial Intelligence and Data Science</option>
+                  <option value="artificial intelligence and machine learning">Artificial Intelligence and Machine Learning</option>
+                  <option value="electronics and instrumentation engineering">Electronics and Instrumentation Engineering</option>
+                  <option value="instrumentation and control engineering">Instrumentation and Control Engineering</option>
+                  <option value="fashion technology">Fashion Technology</option>
+                  <option value="polymer technology">Polymer Technology</option>
+                  <option value="metallurgical engineering">Metallurgical Engineering</option>
+                  <option value="software engineering">Software Engineering</option>
+                  <option value="industrial biotechnology">Industrial Biotechnology</option>
+                </select>
+                <p class="error-msg" id="course-error"></p>
+              </div>
+              
+              <p class="error-msg" id="root-error"></p>
+              <!-- <input type="submit" id="btn"> -->
+               <button id="btn" class="sub-btn">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      
+        <div class="result" id="result">
+          <h1>College that you might get</h1>
+          <div class="clg-list">
+            <ul class="clg-return-list">
+              <li>
+                <p>College code</p>
+                <p>College name</p>
+              </li>
+            </ul>
+            <!-- Dynamic list will go here -->
+            <ul class="clg-return-list">
+              <li class="list">
+                <p class="clg-code">Sample Code</p>
+                <p>Sample College Name</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script src="{{ url_for('static', filename='index.js') }}"></script>
+  
+</body>
+</html>

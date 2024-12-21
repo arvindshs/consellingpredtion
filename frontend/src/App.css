@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+nav{
+  width: 100%;
+  height: auto;
+  background-color: #893be9;
+ 
+}
+ p.nav{
+  color: #fff;
+  display: block;
+  padding: 15px 30px ;
+  font-weight: 600;
+    font-family: "Inter", Sans-serif !important;
+    font-size: 2em;
+
+  }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+.cointainer {
+  width: 100%;
+  height: auto;
+
+}
+
+form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+}
+input[type='text'],select{
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: solid 1px rgb(173, 173, 173);
+  background-color: #fff;
+ 
+}
+
+ input[type='text']::placeholder{
+    font-size: 12px;
+    /* color: grey; */
+  }
+input[type='submit']{
+  width: 120px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin: 30px 0 30px auto;
+  background-color:#2563eb;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+label{
+  font-size: small;
+  margin-bottom: 3px;
+  margin-left: 5px;
+}
+.err-f{
+  font-size:12px;
+  height: 25px;
+}
+.error-msg{
+  margin: 5px 5px;
+  color: red;
+}
+.placeholder {
+   font-size: 22px;
+    /* color: grey; */
+}
+  input:focus,select:focus {
+    border-color:  hsl(211, 78%, 69%);
+    outline: none; 
+    box-shadow: 0 0 5px hsl(211, 78%, 69%);
+    background-color: #fff;
+  }
+ select{
+color: gray;
+ }
+  @media (max-width:600px){
+    input[type='submit']{
+      margin: 0 auto;
+    }
+    .result h1{
+      font-size: x-large;
+    }
+  }
+
+
+  table{
+   width:90%;
+   border-radius: 10px;
+   height: auto;
+   margin: 0 auto;
+   padding-bottom: 2px;
+   background: white;
+   background: #893be9;
+   margin-bottom: 50px;
+  }
+    
+  tr{
+    color: #fff;
+    height: 50px;
+    border-radius: 10px;
+  }
+  td.tdl{
+    text-align: center;
+    border-radius: 10px 0 0 0px;
+    background-color: 893be9;
+    width: 20%;
+  }
+  td.tdr{
+    border-radius: 0px 10px 0 0px;
+    background: 893be9;
+    text-align: center;
+  }
+  td.clg-code{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .result h1{
+    text-align: center;
+    margin: 40px auto;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.alrt-mgs{
+  text-align: center;
+  font-size: x-large;
+  padding:  50px;
+  margin-bottom: 50px;
+}
